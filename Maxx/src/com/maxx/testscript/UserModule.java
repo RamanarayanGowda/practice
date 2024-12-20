@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.apache.poi.EncryptedDocumentException;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
@@ -53,5 +54,6 @@ public class UserModule extends BaseClass {
 		Thread.sleep(2000);
 		boolean res3 = u.getNoUserMsg().isDisplayed();
 		Assert.assertTrue(res3, userName+" has not been deleted");
+		Reporter.log("Username has been deleted",true);
 	}
 }
