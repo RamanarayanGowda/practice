@@ -29,5 +29,6 @@ public class CustomerModule extends BaseClass {
 		Thread.sleep(2000);
 		String actualCustName = t.getCreatedCust().getText();
 		Assert.assertEquals(custName, actualCustName);
+		System.out.println("Created a customer successfully");
 	} 
 }
