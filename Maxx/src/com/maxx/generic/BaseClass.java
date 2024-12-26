@@ -52,5 +52,6 @@ String pwd = f.getPropertyData("pwd");
 	public void closeBrowser() {
 		driver.manage().window().minimize();
 		driver.quit();
+		System.out.println("sucess");
 	}
 }
